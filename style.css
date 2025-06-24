@@ -1,45 +1,72 @@
-.body {
+body {
     padding: 0;
     margin: 0;
     font-family: Roboto;
     box-sizing: border-box;
 
+    background-color:  #0C102E;
 }
 
 
 button {
     border-style: none;
-    border-radius: 4px;
+    border-radius: 10px;
     width: 50px;
     height: 50px;
+    font-size: 20px;
+    background-color: #14204A;
+    color: #6CB9D8;
+    font-weight: 600;
+
+        border: #234B83 solid 4px;
+
 }
+
+button:hover {
+    background-color: #0C102E;
+    color: #6CB9D8;
+}
+
 
 .Container {
     display: flex;
     justify-content: center;
     justify-items: center;
+    
 }
 
 .Calculator{
 
     height: 480px;
     width: 400px;
-    border : black solid 2px;
+    border : #14204A solid 5px;
+    border-radius: 20px;
     padding: 10px;
-    margin-top: 10px;
+    margin-top: 20px;
 
+    background-color: #1B3366;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    gap : 10px;
+    gap : 5px;
     flex-wrap: wrap;
 }
 
 .Container .display{
-    border: black solid;
+    margin-top: 10px;
+    padding-top: 13px;
+    box-sizing: border-box;
+    border: #14204A solid 4px;
+    background-color: #1B3366;
+    border-radius: 10px;
+    font-size: 20px;
+    color: #6CB9D8;
+    font-family: Roboto;
+    font-weight: 600;
     width:350px;
     height: 60px;
+    text-align: center;
 }
 
 .digits{
@@ -48,7 +75,6 @@ button {
 
     width: 301px;
     height: 400px;
-
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -64,6 +90,7 @@ button {
 .operators {
 
     display: flex;
+    margin-right: 10px;
     gap: 10px;
     flex-direction:column;
     
